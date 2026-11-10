@@ -1,50 +1,317 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DeLosAngelesCroche</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <title>DeLosAngelesCrochet</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
-        <img src="logo.jpeg" alt="Logotipo do site">
+        <img class="logotipo" src="logo.jpeg" alt="Logotipo do site">
+        <p>Descubra nossos acessórios de crochet feitos com amor</p>
         <nav>
             <ul>
-                <li>Início</li>
-                <li>Sobre a Artesâ</li>
-                <li>Brincos</li>
-                <li>Colares</li>
-                <li>Pulseiras</li>
-                <li>Outros</li>
-                <li>Contato</li>
-            </ul>        
+                <li><a href="#">Início</a></li>
+                <li><a href="#sobre">Sobre a Artesã</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
         </nav>
-        
-            <h1>De Los Ángeles Crochet</h1>            
+
+
     </header>
 
     <!--Seção 1-->
-    <div class = "destaque">
-        <p>Encanto e arte em cada ponto</p>
-        <p>Descubra nossos acessórios de crochê feitos com amor</p>
-        <img src="principal.png" alt="mulher">
+    <div class="destaque">
+        <h1>De Los Ángeles Crochet</h1>
+        <!--<p class="slogan">Encanto e arte em cada ponto</p>-->
+        <p class="texto">Cada acessório nasce de um processo calmo, onde o cuidado minucioso e o respeito ao tempo
+            moldam peças de altíssima qualidade. Ponto por ponto, transformamos fios selecionados em verdadeiras joias
+            têxteis, feitas para durar e carregar afeto. Nossas criações celebram a exclusividade e a originalidade,
+            oferecendo ao estilo feminino uma assinatura única: um design autoral que une a delicadeza da tradição
+            artesanal à sofisticação da mulher moderna, garantindo que cada brinco, colar ou detalhe seja tão único
+            quanto quem o usa.
+        </p>
+
+        <!--<img src="principal.png" alt="mulher">-->
     </div>
 
-    <!--Seção 2-->
-    <div class="produtos">
-        <button>Brincos</button>
-        <button>Colares</button>
-        <button>Pulseiras</button>
-        <button>conjuntos</button>            
-        <button>outros</button>
+    <!-- ==================== SEÇÃO: SOBRE A ARTESÃ ==================== -->
+<section class="secao-sobre-artesa" id="sobre">
+    <!-- Título com fundo Verde Oliva e fonte em Bege Claro -->
+    <div class="titulo-fundo-verde">
+        <h2>A Artesã</h2>
     </div>
-    <div class="divImagens">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
-        <img src="" alt="">
+    <div class="sobre-container">
+        
+        
+        <div class="sobre-lado-foto">
+            <div class="moldura-foto-artesa">
+                 <img src="foto maria.jpeg" alt="Artesã De los Ángeles">
+            </div>
+        </div>
+
+        <!-- Lado Direito: Texto contando a história da marca -->
+        <div class="sobre-lado-texto">
+            
+            <p>
+                Olá, eu sou a artesã Por trás da De los Ángeles Croché, meu nome é Maria de los Angeles, uma venezuelana que encontrou no Brasil um novo lar para florescer. Sou formada em engenharia e com uma longa trajetória no exigente mundo corporativo, minha  vida tinha um ritmo acelerado, cercada por projetos, prazos, planilhas e relatórios. Fui buscando uma forma de desacelerar, aliviar a mente e me acalmar que reencontrei na criatividade o meu refúgio. Entre um novelo e uma agulha, o crochê surgiu como uma terapia diária — um momento de pausa, respiração e reconexão conmigo mesma. Com o tempo, o que era apenas uma ferramenta de autocuidado e tranquilidade transformou-se em uma nova perspectiva de vida e em um sonho de empreendedorismo. Foi assim que decidi unir minha paixão antiga pela moda e pelos acessórios com essa nova calma encontrada no fazer manual. Afinal, para mim, a moda nunca foi sobre a pressa das tendências de massa, mas sim sobre expressão, afeto e autenticidade.
+
+
+            </p>
+            
+            <p>
+                Assim nasceu a De los Ángeles Croché. Cada peça é desenhada e tecida por mim, ponto a ponto, com extrema dedicação, amor e presença. Mais do que criar acessórios exclusivos, o meu propósito é levar para outras mulheres um pedacinho desse processo consciente. Quando você escolhe uma peça da De los Ángeles, você não está apenas vestindo um acessório elegante; você está levando o afeto, a coragem de recomeçar e o tempo precioso de uma mulher que transformou a calma da criatividade em arte.
+
+
+            </p>
+            
+           
+        </div>
+
     </div>
+</section>
+
+   <!-- ==================== SEÇÃO: BRINCOS ==================== -->
+<section class="secao-brincos">
+
+    
+    <!-- Título com fundo Verde Oliva e fonte em Bege Claro -->
+    <div class="titulo-fundo-verde">
+        <h2>Brincos</h2>
+    </div>
+
+    <!-- Vitrine que organiza os 5 modelos de brincos lado a lado -->
+    <div class="vitrine-brincos-grid">
+        
+        <!-- Modelo 1 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="Brincos1.jpeg" alt="Brinco de Crochê Modelo 1">
+            </div>
+            <p class="nome-brinco">Brinco Aurora</p>
+            <p class="preco-brinco">R$ 65,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+        <!-- Modelo 2 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="Brincos2.jpeg" alt="Brinco de Crochê Modelo 2">
+            </div>
+            <p class="nome-brinco">Brinco Estrela</p>
+            <p class="preco-brinco">R$ 72,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+        <!-- Modelo 3 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="Brincos3.jpeg" alt="Brinco de Crochê Modelo 3">
+            </div>
+            <p class="nome-brinco">Brinco Rosana</p>
+            <p class="preco-brinco">R$ 45,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+        <!-- Modelo 4 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="Brincos4.jpeg" alt="Brinco de Crochê Modelo 4">
+            </div>
+            <p class="nome-brinco">Brinco Flor</p>
+            <p class="preco-brinco">R$ 45,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+        <!-- Modelo 5 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="Brincos6.jpeg" alt="Brinco de Crochê Modelo 5">
+            </div>
+            <p class="nome-brinco">Brinco Rose</p>
+            <p class="preco-brinco">R$ 50,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ==================== SEÇÃO: PULSEIRAS ==================== -->
+<section class="secao-pulseiras">
+
+    
+    <!-- Título com fundo Verde Oliva e fonte em Bege Claro -->
+    <div class="titulo-fundo-verde">
+        <h2>Pulseiras</h2>
+    </div>
+
+    <!-- Vitrine que organiza os 5 modelos de brincos lado a lado -->
+    <div class="vitrine-brincos-grid">
+        
+        <!-- Modelo 1 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="Pulseira1.jpeg" alt="Pulseira de Crochê Modelo 1">
+            </div>
+            <p class="nome-brinco">Pulseira Aurora</p>
+            <p class="preco-brinco">R$ 35,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+        <!-- Modelo 2 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="pulseiras2.png" alt="Pulseira de Crochê Modelo 2">
+            </div>
+            <p class="nome-brinco">Pulseira Estrela</p>
+            <p class="preco-brinco">R$ 42,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+        <!-- Modelo 3 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="pulseiras3.png" alt="Pulseira de Crochê Modelo 3">
+            </div>
+            <p class="nome-brinco">Pulseira Rosana</p>
+            <p class="preco-brinco">R$ 30,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+        <!-- Modelo 4 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="pulseiras4.png" alt="Pulseira de Crochê Modelo 4">
+            </div>
+            <p class="nome-brinco">Pulseira Flor</p>
+            <p class="preco-brinco">R$ 35,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+           </div>
+</section>
+
+<!-- ==================== SEÇÃO: COLARES ==================== -->
+<section class="secao-colares">
+
+    
+    <!-- Título com fundo Verde Oliva e fonte em Bege Claro -->
+    <div class="titulo-fundo-verde">
+        <h2>Colares</h2>
+    </div>
+
+    <!-- Vitrine que organiza os 5 modelos de brincos lado a lado -->
+    <div class="vitrine-brincos-grid">
+        
+        <!-- Modelo 1 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="Colar1.jpeg" alt="colar de Crochê Modelo 1">
+            </div>
+            <p class="nome-brinco">Colar Aurora</p>
+            <p class="preco-brinco">R$ 50,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+        <!-- Modelo 2 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="Colar2.jpeg" alt="colar de Crochê Modelo 2">
+            </div>
+            <p class="nome-brinco">Colar Estrela</p>
+            <p class="preco-brinco">R$ 60,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+        <!-- Modelo 3 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="Colar3.jpeg" alt="Colar de Crochê Modelo 3">
+            </div>
+            <p class="nome-brinco">Colar Rosana</p>
+            <p class="preco-brinco">R$ 50,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+        <!-- Modelo 4 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="Conjunto1.jpeg" alt="Conjunto de Crochê Modelo 4">
+            </div>
+            <p class="nome-brinco">Conjunto Mandala</p>
+            <p class="preco-brinco">R$ 85,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+
+        <!-- Modelo 5 -->
+        <div class="card-brinco">
+            <div class="molde-foto-brinco">
+                <img src="Conjunto2.jpeg" alt="conjunto de Crochê Modelo 4">
+            </div>
+            <p class="nome-brinco">Conjunto Pérola</p>
+            <p class="preco-brinco">R$ 95,00</p>
+            <button class="btn-comprar-brinco">Comprar</button>
+        </div>
+           </div>
+</section>
+
+<!-- ==================== SEÇÃO: CONTATO ==================== -->
+<section class="secao-contato" id="contato">
+    <!-- Título com fundo Verde Oliva e fonte em Bege Claro -->
+    <div class="titulo-fundo-verde">
+        <h2>Atendimento</h2>
+    </div>
+    <div class="contato-container">
+        
+        <!-- Cabeçalho da Seção -->
+        <div class="contato-cabecalho">
+            <h2>Fale com a De los Ángeles</h2>
+            <p>Tem alguma dúvida sobre os acessórios, quer encomendar uma peça sob medida ou solicitar um prazo de produção especial? Escolha o canal de sua preferência:</p>
+        </div>
+
+        <!-- Grade com os Canais de Atendimento -->
+        <div class="grade-canais-contato">
+            
+            <!-- Canal 1: WhatsApp -->
+            <div class="card-canal">
+                <div class="icone-canal">💬</div>
+                <h3>WhatsApp</h3>
+                <p>Converse diretamente comigo, tire dúvidas em tempo real e faça suas encomendas personalizadas.</p>
+                <!-- Substitua pelo seu link/número real do WhatsApp -->
+                <a href="https://wa.me/+5521995635596" target="_blank" class="btn-canal-link">Enviar Mensagem</a>
+            </div>
+
+            <!-- Canal 2: Instagram -->
+            <div class="card-canal">
+                <div class="icone-canal">📸</div>
+                <h3>Instagram</h3>
+                <p>Acompanhe os bastidores de cada ponto, assista aos vídeos de produção e veja novos modelos exclusivos.</p>
+                <!-- Substitua pelo link real do seu perfil -->
+                <a href="https://www.instagram.com/maria_delosangelesls?cplk=MWY3dDhpZGphMzJhZA==" target="_blank" class="btn-canal-link">Seguir Perfil</a>
+            </div>
+
+            <!-- Canal 3: Correio Eletrônico / E-mail -->
+            <div class="card-canal">
+                <div class="icone-canal">✉️</div>
+                <h3>E-mail</h3>
+                <p>Para dúvidas administrativas, suporte com pedidos realizados na loja ou parcerias comerciais.</p>
+                <!-- Substitua pelo seu endereço de e-mail real -->
+                <a href="mailto:lizardosulbaran@gmail.com" class="btn-canal-link">Enviar E-mail</a>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
 </body>
+
 </html>

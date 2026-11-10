@@ -3,8 +3,460 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 220px;
+}
+
 body{
     background-color:rgba(244, 237, 226);
     
+}
+header{
+    width: 100%;
+    background-color: #F4EDE2;
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000; 
+     
+  p{
+        font-family: 'Playfair Display', serif;
+        font-style: italic;  
+        color: #6A1B30;   
+        font-size: 34px;
+    }
+
+    nav ul {
+    display: flex;
+    gap: 25px;
+    list-style: none; /* Remove as bolinhas padrão da lista */
+    padding: 0;
+    margin: 0;
+}
+   
+     
+    nav ul li a{
+        display: flex;
+        gap: 45px;
+        list-style-type: none;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;  
+        color: #6A1B30; 
+        text-decoration: none;  
+        font-size: 20px;
+        
+       
+    }
+}
+.logotipo{
+    width: 150px;
+}
+
+.destaque{
+    margin-top: 30px;
+    background-image: 
+        linear-gradient(to right, #f7e6c9 30%, #F4EDE2 40%, transparent 50%), 
+        url('principal.png');
+    background-repeat: no-repeat; 
+    background-size:cover, contain;
+    background-position:right;
+    margin-bottom: 180px;
+    
+    min-height: 400px;  
+    
+    width: 100%;
+    
+    display: flex;
+    
+    flex-direction: column;
+    h1{
+         font-size: 5vw;
+        font-family: 'Playfair Display', serif;
+        font-style: italic;  
+        color: #6A1B30;   
+        margin-left: 6%;  
+    }
+      
+    /*.slogan{
+        font-family: 'Playfair Display', serif;
+        font-style: italic;  
+        color: #6A1B30;   
+        font-size: 30px;
+        margin-left: 6%; 
+    }*/
+    .texto{
+        max-width: 38%; 
+        font-family: 'Playfair Display', serif;
+        font-style: italic;  
+        color: #6A1B30;  
+        line-height: 1.6; 
+        text-align: justify;
+        text-justify: inter-word; 
+        font-size: 19px;
+        margin-left: 6%; 
+    }
 
 }
+
+<style>
+    /* Configurações estruturais da seção */
+    .secao-sobre-artesa {
+        width: 100%;
+        background-color: #FFFFFF; /* Fundo branco para destacar do fundo bege do restante do site */
+        padding: 80px 20px;
+        margin-bottom: 180px; /* Mantém o padrão de espaçamento entre seções que definimos */
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Container Flexbox para colocar Foto e Texto lado a lado */
+    .sobre-container {
+        max-width: 1100px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center; /* Centraliza a foto verticalmente em relação ao bloco de texto */
+        gap: 60px; /* Distância elegante entre a foto e o texto */
+    }
+
+    /* LADO ESQUERDO: Configuração da Foto */
+    .sobre-lado-foto {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .moldura-foto-artesa {
+        width: 400px;
+        height: 400px;
+        border-radius: 50%; /* Transforma a foto em um círculo perfeito */
+        border: 4px solid #8E6B53; /* Moldura fina na cor Marrom Terracota */
+        padding: 10px; /* Cria um espaço de respiro entre a moldura e a foto */
+        background-color: #F4EDE2; /* Fundo Bege Claro no espaço de respiro */
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05); /* Sombra suave de sofisticação */
+        overflow: hidden;
+    }
+
+    .moldura-foto-artesa img {
+        width: 100%;
+        height: 100%;
+        border-radius: 50%; /* Garante que a imagem interna também seja circular */
+        object-fit: cover; /* Encaixa a foto perfeitamente sem achatar ou distorcer */
+        transition: transform 0.4s ease;
+    }
+
+ 
+
+    /* LADO DIREITO: Configuração do Bloco de Texto */
+    .sobre-lado-texto {
+        flex: 1.3; /* Dá um pouco mais de espaço para o texto do que para a foto */
+        /*display: flex;
+        flex-direction: column;*/
+    }
+
+    .sobre-lado-texto p {
+    width: 100%; 
+    display: block; /* Força o parágrafo a se comportar como um bloco de texto normal */
+    font-size: 34px;
+    line-height: 1.8;
+    color: #333333;
+    margin-bottom: 20px; /* Cria o espaço em branco entre um parágrafo e outro */
+    text-align: justify;
+}
+
+
+
+ 
+    .sobre-lado-texto p {
+        font-family: 'Playfair Display', serif;
+        font-size: 20px;
+        font-style: italic;
+        line-height: 1.8; /* Espaçamento confortável entre as linhas */
+        color: #6A1B30; /* Cinza escuro suave para leitura não cansar */
+        margin-bottom: 20px;
+        text-align: justify; /* Alinha perfeitamente nas laterais esquerda e direita */
+        text-justify: inter-word; /* Suaviza os espaços gerados pelo justify */
+    }
+
+    /* Remove a margem do último parágrafo para não brigar com a assinatura */
+    .sobre-lado-texto p:last-of-type {
+        margin-bottom: 180px;
+    }
+
+  
+
+   
+    </style>
+ 
+  <style>
+    /* Estilos base da seção */
+    
+    .secao-brincos {
+        width: 100%;
+        max-width: 1200px;
+        margin: 60px auto;
+        padding: 0 500px;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 180px;
+    }
+
+    /* Faixa de Título: Fundo Verde Oliva e Fonte Bege Claro */
+    .titulo-fundo-verde {
+        background-color: #3A563C; /* Verde Oliva oficial */
+        padding: 60px;
+        text-align: center;
+        border-radius: 8px;
+        margin-bottom: 40px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .titulo-fundo-verde h2 {
+        font-family: 'Playfair Display', serif;
+        color: #F4EDE2;          /* Bege Claro oficial */
+        font-size: 90px;
+        font-weight: 600;
+        font-style: italic;
+        margin: 0;
+        letter-spacing: 1px;
+    }
+
+    /* Grid para organizar exatamente as 5 imagens lado a lado */
+    .vitrine-brincos-grid {
+        display: grid;
+        /* Cria 5 colunas iguais e responsivas */
+        grid-template-columns: repeat(5, 1fr); 
+        gap: 15px;
+        width: 100%;
+        margin-bottom: 180px;
+    }
+
+    /* Card individual do brinco */
+    .card-brinco {
+        background-color: #FFFFFF;
+        border-radius: 8px;
+        padding: 15px;
+        text-align: center;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease;
+    }
+
+    .card-brinco:hover {
+        transform: translateY(-5px); /* Efeito de flutuar ao passar o mouse */
+    }
+
+    /* Moldura das imagens dos brincos */
+    .molde-foto-brinco {
+        width: 100%;
+        aspect-ratio: 1 / 1; /* Força um formato quadrado perfeito para a vitrine */
+        border-radius: 6px;
+        overflow: hidden;
+        background-color: #F4EDE2; /* Fundo bege suave caso a foto demore a carregar */
+        margin-bottom: 15px;
+    }
+
+    .molde-foto-brinco img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Recorta a imagem sem distorcer para caber no quadrado */
+        transition: transform 0.4s ease;
+    }
+
+    .card-brinco:hover .molde-foto-brinco img {
+        transform: scale(1.06); /* Zoom sutil na foto ao passar o mouse */
+    }
+
+    /* Textos do produto */
+    .nome-brinco {
+        font-family: 'Playfair Display', serif;
+        font-size: 16px;
+        font-style: italic;
+        color: #1C403E; /* Seu Verde Petróleo para contraste elegante */
+        margin-bottom: 6px;
+        font-weight: 600;
+    }
+
+    .preco-brinco {
+        font-size: 15px;
+        font-weight: 600;
+        color: #8E6B53; /* Marrom Terracota */
+        margin-bottom: 15px;
+        margin-top: auto; /* Empurra o preço e o botão sempre para a base */
+    }
+
+    /* Botão de compra individual */
+    .btn-comprar-brinco {
+        width: 100%;
+        background-color: transparent;
+        border: 2px solid #6A1B30; /* Borda Vinho Tinto */
+        color: #6A1B30;            /* Texto Vinho Tinto */
+        padding: 8px 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .btn-comprar-brinco:hover {
+        background-color: #6A1B30; /* Fundo preenche com Vinho Tinto */
+        color: #FFFFFF;            /* Letra muda para branco */
+    }
+
+    /* Configuração responsiva para telas menores (Tablets e Celulares) */
+    @media (max-width: 1024px) {
+        .vitrine-brincos-grid {
+            grid-template-columns: repeat(3, 1fr); /* 3 colunas em tablets */
+        }
+    }
+
+    @media (max-width: 600px) {
+        .vitrine-brincos-grid {
+            grid-template-columns: repeat(2, 1fr); /* 2 colunas em celulares */
+            gap: 15px;
+        }
+        .nome-brinco {
+            font-size: 14px;
+        }
+    }
+</style>
+
+<style>
+    /* Configurações estruturais da seção */
+    .secao-contato {
+        width: 100%;
+        background-color: #F4EDE2; /* Fundo Bege Claro oficial */
+        padding: 80px 20px;
+        margin-bottom: 0; /* Geralmente é a última seção antes do rodapé */
+        font-family: 'Montserrat', sans-serif;
+    }
+
+    .contato-container {
+        max-width: 1100px;
+        margin: 0 auto;
+    }
+
+    /* Cabeçalho de Contato */
+    .contato-cabecalho {
+        text-align: center;
+        max-width: 700px;
+        margin: 0 auto 50px auto;
+    }
+
+    .subtitulo-contato {
+        font-size: 12px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: #8E6B53; /* Marrom Terracota */
+        font-weight: 600;
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .contato-cabecalho h2 {
+        font-family: 'Playfair Display', serif;
+        font-size: 36px;
+        color: #1C403E; /* Verde Petróleo */
+        margin-bottom: 20px;
+        font-weight: 500;
+    }
+
+    .contato-cabecalho p {
+        font-size: 15px;
+        line-height: 1.7;
+        color: #555555;
+    }
+
+    /* Grade de Blocos / Cards */
+    .grade-canais-contato {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr); /* 3 colunas iguais lado a lado */
+        gap: 30px;
+        width: 100%;
+    }
+
+    /* Card de Atendimento Individual */
+    .card-canal {
+        background-color: #FFFFFF; /* Fundo branco para destacar do bege */
+        border-radius: 8px;
+        padding: 40px 30px;
+        text-align: center;
+        box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card-canal:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(0, 0, 0, 0.06);
+    }
+
+    /* Emoji / Ícone visual */
+    .icone-canal {
+        font-size: 32px;
+        margin-bottom: 20px;
+        display: block;
+    }
+
+    .card-canal h3 {
+        font-family: 'Playfair Display', serif;
+        font-size: 22px;
+        color: #1C403E; /* Verde Petróleo */
+        margin-bottom: 12px;
+        font-weight: 600;
+    }
+
+    .card-canal p {
+        font-size: 14px;
+        line-height: 1.6;
+        color: #666666;
+        margin-bottom: 25px;
+        flex-grow: 1; /* Faz todos os textos empurrarem o botão para a mesma base */
+    }
+
+    /* Botões de Link dos Canais */
+    .btn-canal-link {
+        width: 100%;
+        background-color: transparent;
+        border: 2px solid #6A1B30; /* Borda Vinho Tinto */
+        color: #6A1B30;            /* Texto Vinho Tinto */
+        padding: 10px 0;
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 600;
+        font-size: 13px;
+        border-radius: 4px;
+        text-decoration: none;     /* Remove o sublinhado padrão de links <a> */
+        display: block;
+        transition: all 0.3s ease;
+    }
+
+    .btn-canal-link:hover {
+        background-color: #6A1B30; /* Fundo preenche com Vinho Tinto */
+        color: #FFFFFF;            /* Letra muda para branco */
+    }
+
+    /* 📱 RESPONSIVIDADE: Ajuste automático para telas menores (Celulares) */
+    @media (max-width: 850px) {
+        .grade-canais-contato {
+            grid-template-columns: 1fr; /* Transforma em uma lista de coluna única */
+            gap: 20px;
+        }
+
+        .contato-cabecalho h2 {
+            font-size: 28px;
+        }
+
+        .card-canal {
+            padding: 30px 20px;
+        }
+    }
+</style>
